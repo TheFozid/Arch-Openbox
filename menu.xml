@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="system-menu" label="System">
+  <item label="Openbox Configuration Manager">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+    <item label="GTK2/3 Theming">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+      <item label="LXQT Theming">
+    <action name="Execute">
+      <command>lxqt-config</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  
+  
+  
+  <separator />
+  <item label="Reconfigure Openbox">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+<menu id="applications" label="Applications" execute="xdg_menu --format openbox3-pipe --root-menu /etc/xdg/menus/arch-applications.menu" />
+  <menu id="system-menu"/>
+<menu id="Wallpaper" label="Wallpaper" execute="/home/danny/scripts/wallpipe.py" />
+  <separator />
+
+<menu id="exit-menu" label="Exit">
+	<item label="Log Out">
+		<action name="Execute">
+			<command>openbox --exit</command>
+		</action>
+	</item>
+	<item label="Shutdown">
+		<action name="Execute">
+			<command>systemctl poweroff</command>
+		</action>
+	</item>
+	<item label="Restart">
+		<action name="Execute">
+		        <command>systemctl reboot</command>
+		</action>
+	</item>
+	<item label="Suspend">
+		<action name="Execute">
+		        <command>systemctl suspend</command>
+		</action>
+	</item>
+
+</menu>
+
+</menu>
+
+</openbox_menu>
