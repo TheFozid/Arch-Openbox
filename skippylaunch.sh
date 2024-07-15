@@ -1,4 +1,8 @@
 #! bin/bash
 
-killall skippy-xd &
+if ps aux | grep skippy-xd > /dev/null
+then
+  killall skippy-xd
+fi
+
 skippy-xd
