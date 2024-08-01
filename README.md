@@ -1,5 +1,7 @@
 Dot files and screenshots of my semi-tiling Openbox setup.
 
+No further updates to this as I have moved to Wayland. My walyand setup under Hyprland is exactly the same functionality, look and feel of this Openbox setup.
+
 
 I have recently swapped to polybar which has replaced conky and tint2
 
