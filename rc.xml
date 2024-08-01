@@ -59,7 +59,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>DejaVu Sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -68,7 +68,7 @@
     </font>
     <font place="InactiveWindow">
       <name>DejaVu Sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -77,7 +77,7 @@
     </font>
     <font place="MenuHeader">
       <name>DejaVu Sans</name>
-      <size>7</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -86,7 +86,7 @@
     </font>
     <font place="MenuItem">
       <name>DejaVu Sans</name>
-      <size>7</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -95,7 +95,7 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>DejaVu Sans</name>
-      <size>7</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -104,7 +104,7 @@
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>DejaVu Sans</name>
-      <size>7</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -154,13 +154,13 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>16</top>
+    <top>14</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
   <dock>
-    <position>BottomLeft</position>
+    <position>TopRight</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
@@ -232,7 +232,7 @@
       <action name="MaximizeVert"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
-        <width>959</width>
+        <width>958</width>
         <x>0</x>
         <y>0</y>
       </action>
@@ -242,8 +242,8 @@
       <action name="MaximizeVert"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
-        <width>959</width>
-        <x>961</x>
+        <width>958</width>
+        <x>962</x>
         <y>0</y>
       </action>
     </keybind>
@@ -281,9 +281,9 @@
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
-        <x>961</x>
+        <x>962</x>
         <y>0</y>
-        <width>959</width>
+        <width>958</width>
         <height>531</height>
       </action>
     </keybind>
@@ -293,7 +293,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>533</y>
-        <width>959</width>
+        <width>958</width>
         <height>531</height>
       </action>
     </keybind>
@@ -301,9 +301,9 @@
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
-        <x>961</x>
+        <x>962</x>
         <y>533</y>
-        <width>959</width>
+        <width>958</width>
         <height>531</height>
       </action>
     </keybind>
@@ -318,6 +318,11 @@
     <keybind key="W-e">
       <action name="Execute">
         <command>gedit</command>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        <command>galculator</command>
       </action>
     </keybind>
     <keybind key="W-w">
